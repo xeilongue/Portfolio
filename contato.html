@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="icon-bar">
+            <a href="index.html">
+                <img src="img/home.png" alt="Home">
+                <div class="icon">Home</div>
+            </a>
+            <a href="sobre.html">
+                <img src="img/sobre.png" alt="Sobre">
+                <div class="icon">Sobre</div>
+            </a>
+            <a href="projetos.html">
+                <img src="img/projetos.png" alt="Projetos">
+                <div class="icon">Projetos</div>
+            </a>
+            <a href="contato.html">
+                <img src="img/contato.png" alt="Contato">
+                <div class="icon">Contato</div>
+            </a>
+            <a href="redes.html">
+                <img src="img/redes.png" alt="Redes">
+                <div class="icon">Redes</div>
+            </a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1>Envio de propostas abaixo</h1>
+        <form id="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JV. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('#contact-form');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const nome = document.querySelector('#nome').value;
+                const email = document.querySelector('#email').value;
+                const mensagem = document.querySelector('#mensagem').value;
+                
+                if(nome && email && mensagem) {
+                    alert(`Obrigado, ${nome}! Sua mensagem foi enviada.`);
+                    form.reset();
+                } else {
+                    alert('Por favor, preencha todos os campos.');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

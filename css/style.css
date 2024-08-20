@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+header {
+    background-color: #111; /* Fundo escuro para o cabeçalho */
+    color: #fff; /* Texto branco */
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* Links brancos */
+    text-decoration: none;
+}
+
+/* Icon Bar */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #111; /* Fundo escuro para a barra de ícones */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.icon-bar a {
+    display: block;
+    margin: 10px 0;
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.icon-bar a img {
+    width: 30px; /* Ajuste o tamanho dos ícones */
+    height: 30px; /* Ajuste o tamanho dos ícones */
+}
+
+.icon-bar a:hover {
+    background-color: #333; /* Escurece o fundo ao passar o mouse */
+}
+
+/* Estilos para seções */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-container {
+    margin-top: 20px;
+}
+
+.profile-photo {
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste o tamanho conforme necessário */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+#projetos {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 50px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os projetos horizontalmente dentro do contêiner */
+    gap: 20px; /* Espaçamento entre os projetos */
+}
+
+.projeto {
+    background-color: #222; /* Fundo escuro para projetos */
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Largura fixa para projetos */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555; /* Borda escura */
+    background-color: #333; /* Fundo escuro para campos */
+    color: #fff; /* Texto branco */
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #444; /* Fundo escuro para o botão */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555; /* Escurece o fundo ao passar o mouse */
+}
+
+footer {
+    background-color: #111; /* Fundo escuro para o rodapé */
+    color: #fff; /* Texto branco */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para a página de contato */
+.contato-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    color: #1e90ff; /* Cor azul para links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
